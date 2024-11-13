@@ -3,8 +3,6 @@ cd C:\Users\jairo.soares\developer\others\angular\angular-crud
 - Home
 
 
-
-
 # Windows installer
 - GitHub CLI
 - Choco
@@ -29,7 +27,8 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Angular 17 (Modern Angular!)
 - Angular 18 (The last)
 
-# Aula 2 - 9:22'
+# Current class 4: 0:00'
+
 
 
 # VSCode extensions
