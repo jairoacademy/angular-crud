@@ -2,6 +2,11 @@
 cd C:\Users\jairo.soares\developer\others\angular\angular-crud
 - Home
 
+# Links
+https://v14.angular.io/guide/lazy-loading-ngmodules
+https://m3.material.io/styles/color/system/overview
+https://v12.material.angular.io/
+
 
 # Windows installer
 - GitHub CLI
@@ -27,8 +32,18 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Angular 17 (Modern Angular!)
 - Angular 18 (The last)
 
-# Current class 4: 0:00'
+# 14/11/2024 (64)
+- Class 4 (creating module)
+- Class 5 (creating Material Table)
+- Class 6 (creating Material Table to list courses)
+- Class 7 (css Material Table and shared model)
+- Class 8 (creating service)
 
+
+# Angular Docs (Documentation) 
+https://v14.angular.io/docs
+- CLI Command Reference:
+  \Reference\CLI Command Reference
 
 
 # VSCode extensions
@@ -59,7 +74,27 @@ ng add @angular/material
 ng serve
 
 # Creating module
+- cria modulo e roteamento e o importa o roteamento no modulo
 ng g m courses --routing
 
 # Creating component
-ng g c 
+ng g c courses/courses
+
+# Lazy loading basic (explanatioin)
+https://v14.angular.io/guide/lazy-loading-ngmodules
+
+# Material Components
+- Table
+https://v12.material.angular.io/components/table/overview
+
+# Creating interface to models
+ng g interface courses/model/course
+
+# Styling
+Card >> container
+
+# Modulos separadas para agrupar imports
+ng g m shared/app-material
+
+# Creating service
+ng g s courses/services/courses
