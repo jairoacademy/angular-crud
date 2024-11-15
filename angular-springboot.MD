@@ -56,6 +56,7 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Class  9 (Http call and rxjs)
 - Class 10 (Spinner)
 - Class 11 (Error handling)
+- Class 12 (Pipe to show icon)
 
 
 
@@ -125,3 +126,6 @@ ng g s courses/services/courses
 https://v12.material.angular.io/components/progress-spinner/overview
 
 
+# Creatubg Dialog
+ng g m shared
+ng g c shared/components/error-dialog
