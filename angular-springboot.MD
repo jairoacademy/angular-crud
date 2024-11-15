@@ -1,4 +1,4 @@
-- Work (Node v14.21.3) - install: choro
+# Work (Node v14.21.3) - install: choro
 cd C:\Users\jairo.soares\developer\others\angular\angular-crud
     _                      _                 ____ _     ___
     / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
@@ -6,38 +6,20 @@ cd C:\Users\jairo.soares\developer\others\angular\angular-crud
   / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
  /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
                 |___/
+- Angular CLI: 12.2.18
+- Node: 14.21.3
+- Package Manager: npm 6.14.18
+
+# Home
+cd /home/jairo/MEGA/jairo.soares/workspace/stack/front/angular/experiments/angular-crud
+- Não está segurando a versão do node
 
 
-Angular CLI: 12.2.18
-Node: 14.21.3
-Package Manager: npm 6.14.18
-OS: win32 x64
-
-Angular: 12.2.17
-... animations, common, compiler, compiler-cli, core, forms
-... platform-browser, platform-browser-dynamic, router
-
-Package                         Version
----------------------------------------------------------
-@angular-devkit/architect       0.1202.18
-@angular-devkit/build-angular   12.2.18
-@angular-devkit/core            12.2.18
-@angular-devkit/schematics      12.2.18
-@angular/cdk                    12.2.13
-@angular/cli                    12.2.18
-@angular/material               12.2.13
-@schematics/angular             12.2.18
-rxjs                            6.6.7
-typescript                      4.3.5
-
-
-- Home
 
 # Links
 https://v14.angular.io/guide/lazy-loading-ngmodules
 https://m3.material.io/styles/color/system/overview
 https://v12.material.angular.io/
-
 
 # Windows installer
 - GitHub CLI
@@ -64,11 +46,17 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Angular 18 (The last)
 
 # 14/11/2024 (64)
-- Class 4 (creating module)
-- Class 5 (creating Material Table)
-- Class 6 (creating Material Table to list courses)
-- Class 7 (css Material Table and shared model)
-- Class 8 (creating service)
+- Class  4 (creating module)
+- Class  5 (creating Material Table)
+- Class  6 (creating Material Table to list courses)
+- Class  7 (css Material Table and shared model)
+- Class  8 (creating service)
+
+# 15/11/2024 (64)
+- Class  9 (Http call and rxjs)
+- Class 10 (Spinner)
+- Class 11 (Error handling)
+
 
 
 # Angular Docs (Documentation) 
@@ -83,12 +71,15 @@ https://v14.angular.io/docs
 
 # Using a specific node version
 nvm install 14.21.3
+nvm use 14.21.3
+nvm alias default 14.21.3
+
 
 # Install
 - nodejs
   - node -v
   - Install Angular CLI:
-    - npm install -g @angular/cli@12.2.2
+    - npm install -g @angular/cli@12.2.18
     - ng --version
   - Creating projeto:
     - ng new angular-crud
@@ -129,3 +120,8 @@ ng g m shared/app-material
 
 # Creating service
 ng g s courses/services/courses
+
+# Spinner
+https://v12.material.angular.io/components/progress-spinner/overview
+
+
