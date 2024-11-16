@@ -10,9 +10,9 @@ import { Course } from '../model/course';
 
 export class CoursesService {
 
-  private readonly API = '/assets/courses.json';
+  private readonly API = '/api/courses';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private readonly httpClient: HttpClient) { }
 
   list() {
     return this.httpClient.get<Course[]>(this.API)

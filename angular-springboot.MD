@@ -57,10 +57,15 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Class 10 (Spinner)
 - Class 11 (Error handling)
 - Class 12 (Pipe to show icon)
+- Class 13 (environment java and maven to spring) - nothing implemented
+
+# 16/11/2024 (64)
+- Class 14 (hello world with spring) - creating project with Cursor AI
+- Class 15 (spring list courses)
+- Class 16 (connecting Angular API and Thunder Client use)
 
 
-
-# Angular Docs (Documentation) 
+# Angular Docs (Documentation)
 https://v14.angular.io/docs
 - CLI Command Reference:
   \Reference\CLI Command Reference
@@ -69,6 +74,16 @@ https://v14.angular.io/docs
 # VSCode extensions
 - Angular Extension Pack (Loiane Groner)
   - TS Hero > Organize imports
+- Extension Pack for Java + Spring (not work for Cursor IDE)
+https://marketplace.visualstudio.com/items?itemName=loiane.java-spring-extension-pack
+- Spring Boot Extension Pack
+- Lombok Annotation
+- Thunder Client (alternative Postman)
+- Peacock (when multi VSCode opened)
+
+Extension Pack for Java + Spring
+
+ext install loiane.java-spring-extension-pack
 
 # Using a specific node version
 nvm install 14.21.3
@@ -129,3 +144,35 @@ https://v12.material.angular.io/components/progress-spinner/overview
 # Creatubg Dialog
 ng g m shared
 ng g c shared/components/error-dialog
+
+# Icons
+https://v12.material.angular.io/components/icon/overview
+https://fonts.google.com/icons
+
+# Creating Pipe  sharred
+ng g pipe shared/pipes/category
+
+## Know the environment dev to AI (!?)
+# tO Maven project
+mvn dependency:tree
+
+# to view\now the directoryies
+tree src/main/java/academy/jairo/springboot/springcrud
+
+# H2 Console
+http://localhost:8080/h2-console
+
+
+# Proxy to access back-end (1 or 2)
+1) Through angular.json
+"serve": {
+   "options": {
+      "proxyConfig": "proxy.conf.js"
+  }
+}
+> ng serve
+
+
+2) Through package.json at "script": "start"
+- "ng serve --proxy-confg proxy.conf.js"
+> npm run start
