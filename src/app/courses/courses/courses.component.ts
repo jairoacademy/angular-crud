@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { Router, ActivatedRoute } from '@angular/router';
 
 import { Course } from '../model/course';
 import { CoursesService } from './../services/courses.service';
@@ -18,12 +19,13 @@ export class CoursesComponent implements OnInit {
   // final $ identifier the variable is an observable
   courses$: Observable<Course[]>;
 
-
-  displayedColumns = ['name', 'category'];
+  displayedColumns = ['name', 'category', 'actions'];
 
   constructor(
-    private coursesService: CoursesService,
-    private dialog: MatDialog
+    private readonly coursesService: CoursesService,
+    private readonly dialog: MatDialog,
+    private readonly router: Router,
+    private readonly route: ActivatedRoute
   ) {
 
     this.courses$ = this.coursesService.list()
@@ -44,6 +46,12 @@ export class CoursesComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    //Do something
+  }
+
+
+  onAdd() {
+    this.router.navigate(['new'], { relativeTo: this.route });
   }
 
 }

@@ -63,7 +63,8 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Class 14 (hello world with spring) - creating project with Cursor AI
 - Class 15 (spring list courses)
 - Class 16 (connecting Angular API and Thunder Client use)
-
+- Class 17 (update angular and spring)
+- Class 18 (component form and creating route)
 
 # Angular Docs (Documentation)
 https://v14.angular.io/docs
@@ -176,3 +177,18 @@ http://localhost:8080/h2-console
 2) Through package.json at "script": "start"
 - "ng serve --proxy-confg proxy.conf.js"
 > npm run start
+
+# update Angular
+https://v14.angular.io/cli/update
+https://angular.dev/update-guide
+- mark "I use Angular Material"
+1)
+ng update @angular/cli@13.3.9 @angular/core@13.4.0
+2) commit 1) before
+ng update @angular/cdk@13.3.9 @angular/material@13.3.9
+
+# AI
+Crie uma coluna "actions" com os botões (com icon extraido do material): add, edit, delete
+
+# Creating course-form
+ng g c courses/course-form
