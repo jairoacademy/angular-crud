@@ -1,16 +1,50 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CoursesService } from '../services/courses.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-course-form',
   templateUrl: './course-form.component.html',
   styleUrls: ['./course-form.component.scss']
 })
-export class CourseFormComponent implements OnInit {
+export class CourseFormComponent {
 
-  constructor() { }
+  form: FormGroup;
 
-  ngOnInit(): void {
-    //Do something
+  constructor(
+    private readonly formBuilder: FormBuilder,
+    private readonly service: CoursesService,
+    private readonly snackBar: MatSnackBar,
+    private readonly location: Location
+  ) {
+    this.form = this.formBuilder.group({
+      name: ['', [Validators.required, Validators.minLength(5)]],
+      category: ['', [Validators.required]]
+    });
+  }
+
+
+  onSubmit() {
+    if (this.form.valid) {
+      this.service.save(this.form.value)
+      .subscribe({
+        next: () => this.onSuccess(),
+        error: (error) => {
+          this.snackBar.open('Error saving course', '', { duration: 3000 });
+        }
+      });
+    }
+  }
+
+  onSuccess() {
+    this.snackBar.open('Course saved successfully', '', { duration: 3000 });
+    this.onCancel();
+  }
+
+  onCancel() {
+    this.location.back();
   }
 
 }

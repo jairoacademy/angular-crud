@@ -65,6 +65,13 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Class 16 (connecting Angular API and Thunder Client use)
 - Class 17 (update angular and spring)
 - Class 18 (component form and creating route)
+- Class 18 (component form and creating route)
+
+# 18/11/2024 (64)
+- Class 19 (making form)
+- Class 20 (sending data form to backend)
+- Class 21 (creating spring post)
+
 
 # Angular Docs (Documentation)
 https://v14.angular.io/docs
@@ -189,6 +196,13 @@ ng update @angular/cdk@13.3.9 @angular/material@13.3.9
 
 # AI
 Crie uma coluna "actions" com os botões (com icon extraido do material): add, edit, delete
+Implemente o form aqui, conforme o que ja foi importado (ReactiveFormsModule) pelo curses.modules 
 
 # Creating course-form
 ng g c courses/course-form
+
+
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: -8px;
+    padding-bottom: 20px;
+}
