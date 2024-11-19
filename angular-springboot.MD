@@ -226,5 +226,9 @@ npm install -g @angular/cli@13.4.0
 
 ng update @angular/cli@14 @angular/core@14
 
->>> commit before
+>>> commit before (DEU PAU QUANDO ATUALIZEI ISSO !!!!)
 ng update @angular/cdk@14 @angular/material@14
+
+>>> REVERTI E DEU CERTO (deveria ter nos avisado disso)
+npm install @angular/material@13.3.9 @angular/cdk@13.3.9
+
