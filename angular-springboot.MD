@@ -72,6 +72,7 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Class 20 (sending data form to backend)
 - Class 21 (creating spring post)
 - Class 22 (update ungular v14)
+- Class 23 (angular typed forms)
 
 
 # Angular Docs (Documentation)
@@ -226,4 +227,4 @@ npm install -g @angular/cli@13.4.0
 ng update @angular/cli@14 @angular/core@14
 
 >>> commit before
-ng update @angular/cdk@13.3.9 @angular/material@13.3.9
+ng update @angular/cdk@14 @angular/material@14
