@@ -71,6 +71,7 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Class 19 (making form)
 - Class 20 (sending data form to backend)
 - Class 21 (creating spring post)
+- Class 22 (update ungular v14)
 
 
 # Angular Docs (Documentation)
@@ -206,3 +207,23 @@ ng g c courses/course-form
     margin-bottom: -8px;
     padding-bottom: 20px;
 }
+
+
+
+
+# Update Angular v14
+- forms 
+
+# Agora requer uma versao mais atual do node... instalando...
+nvm install 18.19
+nvm alias default 18.19.1
+>>> depois que eu atualizei a versao do node ele desinstalou o ng!!!!
+
+>>> instalando de novo o ng 
+npm install -g @angular/cli@13.4.0
+
+
+ng update @angular/cli@14 @angular/core@14
+
+>>> commit before
+ng update @angular/cdk@13.3.9 @angular/material@13.3.9
