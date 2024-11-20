@@ -72,7 +72,14 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Class 20 (sending data form to backend)
 - Class 21 (creating spring post)
 - Class 22 (update ungular v14)
+
+# 19/11/2024 (64)
 - Class 23 (angular typed forms)
+
+# 20/11/2024 (64)
+- Class 24 (refactor angular material table)
+- Class 25 (smart component)
+
 
 
 # Angular Docs (Documentation)
@@ -232,3 +239,5 @@ ng update @angular/cdk@14 @angular/material@14
 >>> REVERTI E DEU CERTO (deveria ter nos avisado disso)
 npm install @angular/material@13.3.9 @angular/cdk@13.3.9
 
+# Creating courses-list
+ng g c courses/courses-list

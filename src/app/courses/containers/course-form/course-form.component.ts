@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
-import { CoursesService } from '../services/courses.service';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+import { CoursesService } from '../../services/courses.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Location } from '@angular/common';
 
@@ -9,26 +9,33 @@ import { Location } from '@angular/common';
   templateUrl: './course-form.component.html',
   styleUrls: ['./course-form.component.scss']
 })
-export class CourseFormComponent {
+export class CourseFormComponent implements OnInit {
 
-  form: UntypedFormGroup;
+  form = this.formBuilder.group({
+    name: ['', [Validators.required, Validators.minLength(5)]],
+    category: ['', [Validators.required]]
+  });
 
   constructor(
-    private readonly formBuilder: UntypedFormBuilder,
+    private readonly formBuilder: FormBuilder,
     private readonly service: CoursesService,
     private readonly snackBar: MatSnackBar,
     private readonly location: Location
   ) {
-    this.form = this.formBuilder.group({
-      name: ['', [Validators.required, Validators.minLength(5)]],
-      category: ['', [Validators.required]]
-    });
+    //this.form =
+  }
+
+  ngOnInit(): void {
+      //this.form.value.
   }
 
 
   onSubmit() {
     if (this.form.valid) {
-      this.service.save(this.form.value)
+      this.service.save({
+        name: this.form.value.name || '',
+        category: this.form.value.category || ''
+      })
       .subscribe({
         next: () => this.onSuccess(),
         error: (error) => {

@@ -1,0 +1,14 @@
+.mat-table {
+  overflow: auto;
+  max-height: 600px;
+}
+
+.action-column {
+  flex: 0 0 75px;  // pra direita com 75px
+}
+
+.action-column-header { // nao ficou legal, pq afasta os outros nomes da coluna
+  flex: 0 0 55px;
+}
+
+

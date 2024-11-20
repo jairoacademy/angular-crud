@@ -22,7 +22,7 @@ export class CoursesService {
     );
   }
 
-  save(record: Course) {
+  save(record: Partial<Course>) {
     console.log('will save:', record);
     return this.httpClient.post<Course>(this.API, record).pipe(first()); // this return an observable
   }
