@@ -1,8 +1,11 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { CoursesService } from '../../services/courses.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
+
+import { Course } from '../../model/course';
+import { CoursesService } from '../../services/courses.service';
 
 @Component({
   selector: 'app-course-form',
@@ -12,27 +15,41 @@ import { Location } from '@angular/common';
 export class CourseFormComponent implements OnInit {
 
   form = this.formBuilder.group({
+    _id: [''], // like a hidden field
     name: ['', [Validators.required, Validators.minLength(5)]],
     category: ['', [Validators.required]]
   });
+
+  title: string = '';
 
   constructor(
     private readonly formBuilder: FormBuilder,
     private readonly service: CoursesService,
     private readonly snackBar: MatSnackBar,
-    private readonly location: Location
+    private readonly location: Location,
+    private readonly route: ActivatedRoute
   ) {
-    //this.form =
+    //Do something
   }
 
   ngOnInit(): void {
-      //this.form.value.
+    const course:Course = this.route.snapshot.data['course'];
+    console.log('puts:', course._id);
+    if (course) {
+      this.form.setValue({
+        _id: course._id,
+        name: course.name,
+        category: course.category
+      });
+      this.title = course._id ? 'Edit Course' : 'Create Course';
+    }
   }
 
 
   onSubmit() {
     if (this.form.valid) {
       this.service.save({
+        _id: this.form.value._id || '',
         name: this.form.value.name || '',
         category: this.form.value.category || ''
       })

@@ -22,9 +22,20 @@ export class CoursesService {
     );
   }
 
+  loadById(id: string) {
+    return this.httpClient.get<Course>(`${this.API}/${id}`).pipe(
+      first()
+    );
+  }
+
   save(record: Partial<Course>) {
-    console.log('will save:', record);
-    return this.httpClient.post<Course>(this.API, record).pipe(first()); // this return an observable
+    console.log('_id = ', record._id);
+    if (record._id) {
+      console.log('atualiza');
+      return this.httpClient.put<Course>(`${this.API}/${record._id}`, record).pipe(first());
+    }
+    console.log('novo');
+    return this.httpClient.post<Course>(this.API, record).pipe(first());
   }
 
 }

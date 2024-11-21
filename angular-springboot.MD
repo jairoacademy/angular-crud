@@ -80,6 +80,9 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Class 24 (refactor angular material table)
 - Class 25 (smart component)
 
+- Class 26 (spring findbyId)
+- Class 27 (angular resolve findbyId)
+- Class 28 (form populate)
 
 
 # Angular Docs (Documentation)
@@ -241,3 +244,6 @@ npm install @angular/material@13.3.9 @angular/cdk@13.3.9
 
 # Creating courses-list
 ng g c courses/courses-list
+
+# Route Guard
+ng g resolver courses/guards/course
