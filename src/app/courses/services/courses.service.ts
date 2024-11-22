@@ -38,4 +38,10 @@ export class CoursesService {
     return this.httpClient.post<Course>(this.API, record).pipe(first());
   }
 
+  remove(id: string) {
+    return this.httpClient.delete<void>(`${this.API}/${id}`).pipe(
+      first()
+    );
+  }
+
 }

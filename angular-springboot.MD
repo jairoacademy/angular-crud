@@ -79,11 +79,15 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 # 20/11/2024 (64)
 - Class 24 (refactor angular material table)
 - Class 25 (smart component)
-
 - Class 26 (spring findbyId)
 - Class 27 (angular resolve findbyId)
 - Class 28 (form populate)
+- Class 29 (data update course)
 
+# 21/11/2024 (64)
+- Class 30 (spring update http)
+- Class 31 (spring delete http)
+- Class 32 (angular delete)
 
 # Angular Docs (Documentation)
 https://v14.angular.io/docs
@@ -247,3 +251,9 @@ ng g c courses/courses-list
 
 # Route Guard
 ng g resolver courses/guards/course
+
+
+
+    //this.title = this.route.snapshot.params['id'] ? 'Editando Curso' : 'Novo Curso';
+
+          //this.title = (this.form.value._id || '') ? 'Editando Curso' : 'Novo Curso';
