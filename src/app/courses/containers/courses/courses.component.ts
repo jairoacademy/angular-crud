@@ -8,6 +8,7 @@ import { catchError } from 'rxjs/operators';
 import { ErrorDialogComponent } from '../../../shared/components/error-dialog/error-dialog.component';
 import { Course } from '../../model/course';
 import { CoursesService } from '../../services/courses.service';
+import { ConfirmationDialogComponent } from 'src/app/shared/components/confirmation-dialog/confirmation-dialog.component';
 
 @Component({
   selector: 'app-courses',
@@ -61,17 +62,27 @@ export class CoursesComponent implements OnInit {
   }
 
   onRemove(course: Course) {
-    this.coursesService.remove(course._id).subscribe(
-      () => {
-        this.loadCourses();
-        this.snackBar.open('Course removed successfully!', 'X', {
-          duration: 5000,
-          verticalPosition: 'top',
-          horizontalPosition: 'center'
-        });
-      },
-      error => this.onError('Error removing course.')
-    );
+
+    const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
+      data: 'Confirm the remove?',
+    });
+
+    dialogRef.afterClosed().subscribe((result:boolean) => {
+      if (result) {
+        this.coursesService.remove(course._id).subscribe(
+          () => {
+            this.loadCourses();
+            this.snackBar.open('Course removed successfully!', 'X', {
+              duration: 5000,
+              verticalPosition: 'top',
+              horizontalPosition: 'center'
+            });
+          },
+          error => this.onError('Error removing course.')
+        );
+      }
+    }); 
+
   }
 
 }

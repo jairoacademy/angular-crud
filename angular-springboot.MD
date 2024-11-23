@@ -89,6 +89,10 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Class 31 (spring delete http)
 - Class 32 (angular delete)
 
+# 22/11/2024 (64) >>> iniciando a melhoria mais profissional
+- Class 33 (dialog conf)
+
+
 # Angular Docs (Documentation)
 https://v14.angular.io/docs
 - CLI Command Reference:
