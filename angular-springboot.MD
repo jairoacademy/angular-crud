@@ -92,6 +92,10 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 # 22/11/2024 (64) >>> iniciando a melhoria mais profissional
 - Class 33 (dialog conf)
 
+# 23/11/2024 (64)
+- Class 34 (validation form) - no curso de Angular tem validacoes avançadas
+- Class 35 (spring java bean validation)
+  - Jakarta Bean Validation
 
 # Angular Docs (Documentation)
 https://v14.angular.io/docs
@@ -257,7 +261,3 @@ ng g c courses/courses-list
 ng g resolver courses/guards/course
 
 
-
-    //this.title = this.route.snapshot.params['id'] ? 'Editando Curso' : 'Novo Curso';
-
-          //this.title = (this.form.value._id || '') ? 'Editando Curso' : 'Novo Curso';

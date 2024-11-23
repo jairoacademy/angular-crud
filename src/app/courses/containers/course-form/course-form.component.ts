@@ -16,7 +16,9 @@ export class CourseFormComponent implements OnInit {
 
   form = this.formBuilder.group({
     _id: [''], // like a hidden field
-    name: ['', [Validators.required, Validators.minLength(5)]],
+    name: ['', [
+      Validators.required, Validators.minLength(5),
+      Validators.maxLength(100)]],
     category: ['', [Validators.required]]
   });
 
@@ -45,6 +47,26 @@ export class CourseFormComponent implements OnInit {
     }
   }
 
+  // Format field name
+  private formatFieldName(controlName: string): string {
+    return controlName.charAt(0).toUpperCase() + controlName.slice(1);
+  }
+
+  getErrorMessage(controlName: string): string {
+    const control = this.form.get(controlName);
+    if (control?.hasError('required')) {
+      return `${this.formatFieldName(controlName)} é obrigatório`;
+    }
+    if (control?.hasError('minlength')) {
+      const minLength = control.getError('minlength').requiredLength;
+      return `${this.formatFieldName(controlName)} deve ter pelo menos ${minLength} caracteres`;
+    }
+    if (control?.hasError('maxlength')) {
+      const maxLength = control.getError('maxlength').requiredLength;
+      return `${this.formatFieldName(controlName)} não pode ter mais de ${maxLength} caracteres`;
+    }
+    return 'Campo inválido';
+  }
 
   onSubmit() {
     if (this.form.valid) {
