@@ -97,6 +97,9 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Class 35 (spring java bean validation)
   - Jakarta Bean Validation
 
+- Class 36 (spring remove logic)
+- Class 37 (spring 3 update)
+
 # Angular Docs (Documentation)
 https://v14.angular.io/docs
 - CLI Command Reference:
@@ -261,3 +264,11 @@ ng g c courses/courses-list
 ng g resolver courses/guards/course
 
 
+
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-validation</artifactId>
+    </dependency>
+  </dependencies>
