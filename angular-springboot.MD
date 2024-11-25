@@ -100,6 +100,9 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 - Class 36 (spring remove logic)
 - Class 37 (spring 3 update)
 
+# 24/11/2024 (64)
+- Class 38 (update angular v15)
+
 # Angular Docs (Documentation)
 https://v14.angular.io/docs
 - CLI Command Reference:
@@ -264,11 +267,6 @@ ng g c courses/courses-list
 ng g resolver courses/guards/course
 
 
+# Remover vulnerabilidades
+npm audit fix
 
-
-  <dependencies>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-validation</artifactId>
-    </dependency>
-  </dependencies>
