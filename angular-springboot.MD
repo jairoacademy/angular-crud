@@ -1,3 +1,7 @@
+# Conceitos
+- A camada de serviço encapsula a camada de dominio;
+- Design da API Rest
+
 # Work (Node v14.21.3) - install: choro
 cd C:\Users\jairo.soares\developer\others\angular\angular-crud
     _                      _                 ____ _     ___
@@ -13,6 +17,14 @@ cd C:\Users\jairo.soares\developer\others\angular\angular-crud
 # Home
 cd /home/jairo/MEGA/jairo.soares/workspace/stack/front/angular/experiments/angular-crud
 - Não está segurando a versão do node
+
+
+# Rafael Ponto especialista BD e performance
+https://twitter.com/rponte
+
+The best way to map a @OneToMany relationship with JPA and Hibernate
+https://vladmihalcea.com/the-best-way-to-map-a-onetomany-association-with-jpa-and-hibernate/
+
 
 
 
@@ -103,6 +115,43 @@ https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVl
 # 24/11/2024 (64)
 - Class 38 (update angular v15)
 
+# 25/11/2024 (64)
+- Class 39 (adding service layer)
+- Class 40 (exception handler)
+
+>>>  Vamos focar aqui em finalizar o Curso!
+Passei quase dois meses sem estudar aqui, estão tirando meu foco e isso NÃO PODE ACONTECER!
+
+# 23/12/2024 (65)
+- Class 41 (dto pattern)
+- Class 42 (mapper pattern)
+- Class 43 (Enum Persistence in JPA)
+
+# 25/12/2024 (65)
+- Class 44 (Enum Persist)
+
+# 18/01/2025 (65)
+- Class 44 
+- Class 45 
+- Class 46 
+- Class 47 
+
+# 19/01/2025 (65)
+- Class 48 (lesson interface)
+
+# 20/01/2025 (65)
+- Class 49 (Form Array)
+- Class 50 (Form Array HTML)
+
+# 21/01/2025 (65)
+- Class 51 (add and remove lesson)
+- Class 52 (FormArray validation)
+
+# 22/01/2025 (65)
+- Class 53 (add and remove lesson)
+- Class 54 (form utils service)
+- Class 55 (create and update lessons api)...
+
 # Angular Docs (Documentation)
 https://v14.angular.io/docs
 - CLI Command Reference:
@@ -118,6 +167,9 @@ https://marketplace.visualstudio.com/items?itemName=loiane.java-spring-extension
 - Lombok Annotation
 - Thunder Client (alternative Postman)
 - Peacock (when multi VSCode opened)
+- Checkmarx (verifica vulnerabilidades)
+
+
 
 Extension Pack for Java + Spring
 
@@ -270,3 +322,5 @@ ng g resolver courses/guards/course
 # Remover vulnerabilidades
 npm audit fix
 
+# Criando classe utilitaria para validacoes
+ng g s shared/form/form-utils
