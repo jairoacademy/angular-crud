@@ -82,27 +82,6 @@ export class CourseFormComponent implements OnInit {
     lessons.removeAt(index);
   }
 
-  /*
-  onSubmit() {
-    if (this.form.valid) {
-      this.service.save({
-        _id: this.form.value._id || '',
-        name: this.form.value.name || '',
-        category: this.form.value.category || '',
-        lessons:
-      })
-      .subscribe({
-        next: () => this.onSuccess(),
-        error: (error) => {
-          this.onError();
-        }
-      });
-    } else {
-      this.formUtils.validateAllFormFields(this.form);
-    }
-  }
-  */
-
   onSubmit() {
     if (this.form.valid) {
       this.service.save( this.form.value)

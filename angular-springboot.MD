@@ -1,6 +1,11 @@
 # Conceitos
 - A camada de serviço encapsula a camada de dominio;
 - Design da API Rest
+- Design dos Test Case
+
+# Validations for Enum Types
+https://www.baeldung.com/javax-validations-enums
+
 
 # Work (Node v14.21.3) - install: choro
 cd C:\Users\jairo.soares\developer\others\angular\angular-crud
@@ -151,6 +156,15 @@ Passei quase dois meses sem estudar aqui, estão tirando meu foco e isso NÃO PO
 - Class 53 (add and remove lesson)
 - Class 54 (form utils service)
 - Class 55 (create and update lessons api)...
+
+# 23/01/2025 (65)
+- Class 56 (API validation error)
+  > talk about REST Client (like a Postman): create a api.http file!
+- Class 57 (Enum validation with java bean validations)
+- Class 58 (pageable) 
+
+# 24/01/2025 (65)
+- Class 59 (mysql and Spring Docker Compose)
 
 # Angular Docs (Documentation)
 https://v14.angular.io/docs
@@ -324,3 +338,6 @@ npm audit fix
 
 # Criando classe utilitaria para validacoes
 ng g s shared/form/form-utils
+
+
+Anticorpos Anti-HBC IgM Não reagente
