@@ -166,6 +166,16 @@ Passei quase dois meses sem estudar aqui, estão tirando meu foco e isso NÃO PO
 # 24/01/2025 (65)
 - Class 59 (mysql and Spring Docker Compose)
 
+# 25/01/2025 (65)
+- Class 60 (Angular Material Paginator)
+- https://v16.material.angular.io/components/paginator/overview
+
+# 27/01/2025 (65)
+- Class 61 (Angular v15 to v17)
+
+
+
+
 # Angular Docs (Documentation)
 https://v14.angular.io/docs
 - CLI Command Reference:
@@ -339,5 +349,5 @@ npm audit fix
 # Criando classe utilitaria para validacoes
 ng g s shared/form/form-utils
 
-
 Anticorpos Anti-HBC IgM Não reagente
+
