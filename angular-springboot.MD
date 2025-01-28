@@ -342,12 +342,19 @@ ng g c courses/courses-list
 # Route Guard
 ng g resolver courses/guards/course
 
-
 # Remover vulnerabilidades
 npm audit fix
 
 # Criando classe utilitaria para validacoes
 ng g s shared/form/form-utils
 
-Anticorpos Anti-HBC IgM Não reagente
+# update Angular from v15 to v17
+- Sempre fazer update de uma versao proxima, exemplo da 15 para 16, 16 para 17, etc...
 
+Depois de rodar o comando abaixo, varias dependencias teve que ser feita na mao (16.2.12)
+ng update @angular/cli@16 @angular/core@16 @angular/cdk@16 @angular/material@16 --force
+
+Depois de rodar o comando acima, deu problemas ao rodar "npm i"
+- Dica Chatgpt, execute:
+rm -rf node_modules package-lock.json
+npm install --legacy-peer-deps
