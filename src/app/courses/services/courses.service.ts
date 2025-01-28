@@ -11,7 +11,7 @@ import { CoursePage } from '../model/course-page';
 
 export class CoursesService {
 
-  private readonly API = '/api/courses/pageable';
+  private readonly API = '/api/courses';
 
   constructor(private readonly httpClient: HttpClient) { }
 
