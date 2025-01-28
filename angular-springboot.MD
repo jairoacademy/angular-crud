@@ -173,6 +173,9 @@ Passei quase dois meses sem estudar aqui, estão tirando meu foco e isso NÃO PO
 # 27/01/2025 (65)
 - Class 61 (Angular v15 to v17)
 
+# 27/01/2025 (65)
+- Class 62 (Migration to standalone components)
+
 
 
 
@@ -358,3 +361,10 @@ Depois de rodar o comando acima, deu problemas ao rodar "npm i"
 - Dica Chatgpt, execute:
 rm -rf node_modules package-lock.json
 npm install --legacy-peer-deps
+
+# update Angular to v17
+ng update @angular/cli@17 @angular/core@17 @angular/cdk@17 @angular/material@17 --force
+
+
+# Atualizando para Standalone Components (executar 3 x, pois deve selecionar pra rodar em todas as opcoes)
+ng generate @angular/core:standalone
