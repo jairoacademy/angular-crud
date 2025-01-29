@@ -176,6 +176,8 @@ Passei quase dois meses sem estudar aqui, estão tirando meu foco e isso NÃO PO
 # 27/01/2025 (65)
 - Class 62 (Migration to standalone components)
 
+# 28/01/2025 (65)
+- Class 63 (new Control Flow)
 
 
 
@@ -368,3 +370,5 @@ ng update @angular/cli@17 @angular/core@17 @angular/cdk@17 @angular/material@17 
 
 # Atualizando para Standalone Components (executar 3 x, pois deve selecionar pra rodar em todas as opcoes)
 ng generate @angular/core:standalone
+
+//./courses/courses.routes
